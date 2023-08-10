@@ -9,41 +9,51 @@ class _loginState extends State<login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black87,
+      backgroundColor: Colors.white,
       body: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(10.0),
         child: Center(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              TextField(
-                autofocus: true,
-                keyboardType: TextInputType.emailAddress,
-                style: TextStyle(color: Colors.blue, fontSize: 30),
-                decoration: InputDecoration(
-                  labelText: "E-mail do usuário",
-                  labelStyle: TextStyle(color: Colors.black),
+              SizedBox(
+                width: 40,
+              
+                child:TextField(
+                  autofocus: true,
+                  keyboardType: TextInputType.emailAddress,
+                  style: TextStyle(color: Colors.blue, fontSize: 30),
+                  decoration: InputDecoration(
+                    labelText: "E-mail do usuário",
+                    labelStyle: TextStyle(color: Colors.black),
                 )
               ),
-              TextField(
-                autofocus: true,
-                keyboardType: TextInputType.text,
-                style: TextStyle(color: Colors.blue, fontSize: 30 ),
-                decoration: InputDecoration(
-                  labelText: "Senha do usuário",
-                  labelStyle: TextStyle(color: Colors.black, fontSize: 30),
+              ),
+              SizedBox(
+                width: 40,
+                
+                child: TextField(
+                  obscureText: true,
+                  autofocus: true,
+                  keyboardType: TextInputType.text,
+                  style: TextStyle(color: Colors.blue, fontSize: 30 ),
+                  decoration: InputDecoration(
+                    labelText: "Senha do usuário",
+                    labelStyle: TextStyle(color: Colors.black, fontSize: 30),
                 )
+              ),
               ),
               Container(
                 margin: EdgeInsets.only(top: 30, bottom: 30),
               ),
               TextButton(
-                style: TextButton.styleFrom(backgroundColor: Colors.blue,elevation: 15),
+                style: TextButton.styleFrom(backgroundColor: Colors.blue,elevation: 10),
                 onPressed: (){print("Deu certo?");
               }, 
               child: Text(
-                "Botão",
+                "Entrar",
+                textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.white),
                 ))
             ],
