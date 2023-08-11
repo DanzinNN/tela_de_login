@@ -6,7 +6,7 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Tela de Login',
+      title: 'Login',
       theme: ThemeData(primarySwatch: Colors.blue),
       home: login(),
     ) ;
