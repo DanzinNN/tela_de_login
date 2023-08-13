@@ -26,7 +26,7 @@ class _loginState extends State<login> {
               ),
               SizedBox(
                 width: 400,
-                height: 60,
+                height: 70,
                 child: TextFormField(
               autofocus: true,
               keyboardType: TextInputType.emailAddress,
@@ -34,20 +34,29 @@ class _loginState extends State<login> {
               decoration: InputDecoration(
                 labelText: "E-mail",
                 labelStyle: TextStyle(color: Colors.black),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                prefixIcon: Icon(Icons.mail),
               ),
             ), 
               ),
               SizedBox(
                 width: 400,
-                height: 60,
+                height: 70,
                 child: TextFormField(
               autofocus: true,
               obscureText: true,
               keyboardType: TextInputType.text,
               style: TextStyle(color: Colors.black,fontSize: 20),
-              decoration: InputDecoration(
-                labelText: "Senha",
-                labelStyle: TextStyle(color: Colors.black,fontSize: 20),
+              decoration: InputDecoration(          
+                  labelText: "Senha",
+                  labelStyle: TextStyle(color: Colors.black,fontSize: 20),
+                  border: OutlineInputBorder(
+                  borderRadius:
+                  BorderRadius.circular(10),
+                ),
+                prefixIcon: Icon(Icons.password),
               ),
             ),
               ),
